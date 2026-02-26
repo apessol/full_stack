@@ -1,0 +1,131 @@
+body{
+margin:0;
+background:lightgray;
+}
+
+#topo{
+background:bisque;
+height:120px;
+position:relative;
+}
+
+#topo h1{
+margin:0;
+text-align:center;
+padding-top:35px;
+font-family:Georgia;
+font-size:40px;
+color:darkgreen;
+}
+
+#cpp{
+position:absolute;
+left:20px;
+top:10px;
+width:100px;
+}
+
+#java{
+position:absolute;
+right:20px;
+top:10px;
+width:100px;
+}
+
+#menu{
+background:lightskyblue;
+text-align:center;
+padding:10px;
+border-top:3px solid darkblue;
+border-bottom:3px solid darkblue;
+}
+
+#menu a{
+text-decoration:none;
+margin:0 80px;
+font-family:"Times New Roman";
+font-weight:bold;
+color:#1b3a70;
+}
+
+#principal{
+width:1200px;
+margin:auto;
+text-align:center;
+}
+
+h2{
+font-family:"Times New Roman";
+font-size:28px;
+}
+
+p{
+font-family:Sans-Serif;
+font-size:20pt;
+color:indigo;
+}
+
+#livros img{
+width:220px;
+margin:20px;
+}
+
+#midia iframe{
+width:420px;
+height:240px;
+margin:20px;
+border:0;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+outline:2px dashed red;
+outline-offset:6px;
+}
+
+th{
+border:2px solid darkred;
+background:#f2d6d6;
+padding:6px 15px;
+}
+
+td{
+border:2px solid darkred;
+padding:6px 15px;
+}
+
+#consulta{
+background:yellow;
+width:500px;
+margin:20px auto;
+text-align:left;
+padding:10px;
+}
+
+#rodape{
+background:bisque;
+height:100px;
+position:relative;
+}
+
+#html{
+position:absolute;
+left:20px;
+top:15px;
+width:70px;
+}
+
+#css{
+position:absolute;
+right:20px;
+top:15px;
+width:70px;
+}
+
+#texto{
+text-align:center;
+padding-top:30px;
+font-family:"Comic Sans MS";
+font-size:15pt;
+}
