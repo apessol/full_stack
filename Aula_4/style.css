@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+p {
+    line-height: 1.6;
+}
+
+#menu-principal {
+    background-color: navy;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#menu-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#menu-principal a:hover {
+    color: lightblue;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px gray;
+}
+
+.galeria-imagens img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+}
+
+.tabela-projetos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-projetos th, .tabela-projetos td {
+    border: 1px solid lightgray;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabela-projetos th {
+    background-color: darkblue;
+    color: white;
+}
+
+.tabela-projetos tr:hover {
+    background-color: lightyellow;
+}
+
+.link-destaque {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-destaque:hover {
+    text-decoration: underline;
+    color: darkblue;
+}
