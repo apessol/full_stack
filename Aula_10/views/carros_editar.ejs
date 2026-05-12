@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Carro</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/carros.css">
+</head>
+<body>
+    <div class="container-carros">
+        <h2>Atualizar Carro</h2>
+        <form action="/carros_update/<%= carro.id %>" method="POST">
+            <input type="text" name="marca" value="<%= carro.marca %>" required>
+            <input type="text" name="modelo" value="<%= carro.modelo %>" required>
+            <input type="number" name="ano" value="<%= carro.ano %>" required>
+            <input type="number" name="qtde_disponivel" value="<%= carro.qtde_disponivel %>" required>
+            <button type="submit">Confirmar Atualização</button>
+        </form>
+        <br>
+        <a href="/carros_gerencia">Cancelar</a>
+    </div>
+</body>
+</html>

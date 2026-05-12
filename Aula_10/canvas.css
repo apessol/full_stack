@@ -1,0 +1,20 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container-canvas {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+canvas {
+    background-color: white;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}

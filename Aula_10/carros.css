@@ -1,0 +1,66 @@
+body {
+    background-color: lightsteelblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container-carros {
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px;
+    width: 800px;
+    border: 3px solid navy;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.btn-remover {
+    background-color: red;
+}
+
+.btn-editar {
+    background-color: orange;
+}
+
+.btn-vender {
+    background-color: green;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+.esgotado {
+    color: red;
+    font-weight: bold;
+}

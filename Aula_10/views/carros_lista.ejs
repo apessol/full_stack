@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Carros Disponíveis</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/carros.css">
+</head>
+<body>
+    <nav id="menu-principal">
+        <a href="/">Página Inicial</a>
+        <a href="/carros_gerencia">Gerenciar Carros</a>
+        <a href="/carros_login">Sair</a>
+    </nav>
+    <div class="container-carros">
+        <h2>Carros Disponíveis para Venda</h2>
+        <table>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Quantidade</th>
+                <th>Ação</th>
+            </tr>
+            <% for(let i = 0; i < carros.length; i++) { %>
+                <tr>
+                    <td><%= carros[i].marca %></td>
+                    <td><%= carros[i].modelo %></td>
+                    <td><%= carros[i].ano %></td>
+                    <td><%= carros[i].qtde_disponivel %></td>
+                    <td>
+                        <% if(carros[i].qtde_disponivel > 0) { %>
+                            <form action="/carros_vender/<%= carros[i].id %>" method="POST">
+                                <button type="submit" class="btn-vender">Vender</button>
+                            </form>
+                        <% } else { %>
+                            <span class="esgotado">Esgotado</span>
+                        <% } %>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Carros</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/carros.css">
+</head>
+<body>
+    <nav id="menu-principal">
+        <a href="/">Página Inicial</a>
+        <a href="/carros_lista">Ver Loja</a>
+    </nav>
+    <div class="container-carros">
+        <h2>Cadastrar Novo Carro</h2>
+        <form action="/carros_add" method="POST">
+            <input type="text" name="marca" placeholder="Marca" required>
+            <input type="text" name="modelo" placeholder="Modelo" required>
+            <input type="number" name="ano" placeholder="Ano" required>
+            <input type="number" name="qtde_disponivel" placeholder="Quantidade" required>
+            <button type="submit">Salvar Carro</button>
+        </form>
+
+        <h2>Lista de Carros (Gerência)</h2>
+        <table>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+            <% for(let i = 0; i < carros.length; i++) { %>
+                <tr>
+                    <td><%= carros[i].marca %></td>
+                    <td><%= carros[i].modelo %></td>
+                    <td><%= carros[i].ano %></td>
+                    <td><%= carros[i].qtde_disponivel %></td>
+                    <td>
+                        <form action="/carros_editar_page/<%= carros[i].id %>" method="GET" style="display:inline;">
+                            <button type="submit" class="btn-editar">Atualizar</button>
+                        </form>
+                        <form action="/carros_delete/<%= carros[i].id %>" method="POST" style="display:inline;">
+                            <button type="submit" class="btn-remover">Remover</button>
+                        </form>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

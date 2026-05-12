@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav id="menu-principal">
+        <a href="/">Página Inicial</a>
+        <a href="/projects.html">Meus Projetos</a>
+    </nav>
+
+    <div class="container-blog">
+        <div class="header-blog">
+            <form action="/cadastrar_post.html" method="GET">
+                <button type="submit">Cria Post</button>
+            </form>
+        </div>
+
+        <% for(let i=0; i < posts.length; i++) { %>
+            <div class="post-card">
+                <h3><%= posts[i].titulo %></h3>
+                <p><%= posts[i].resumo %></p>
+                <p><%= posts[i].conteudo %></p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
