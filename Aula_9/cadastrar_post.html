@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav id="menu-principal">
+        <a href="/">Página Inicial</a>
+        <a href="/projects.html">Meus Projetos</a>
+        <a href="/blog">Blog</a>
+    </nav>
+
+    <div class="container-blog">
+        <form action="/salvar_post" method="POST" class="form-post">
+            <label>Título:</label>
+            <input type="text" name="titulo" required>
+            
+            <label>Resumo:</label>
+            <input type="text" name="resumo" required>
+            
+            <label>Conteúdo:</label>
+            <input type="text" name="conteudo" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

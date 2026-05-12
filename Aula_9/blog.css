@@ -1,0 +1,72 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+}
+
+.container-blog {
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px;
+    width: 600px;
+    border: 5px solid darkslategray;
+}
+
+.header-blog {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-blog button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.post-card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.post-card h3 {
+    margin-top: 0;
+    color: black;
+    font-size: 24px;
+}
+
+.form-post {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-post label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.form-post input, .form-post textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.form-post button {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    cursor: pointer;
+}

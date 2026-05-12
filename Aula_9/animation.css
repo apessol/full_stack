@@ -1,0 +1,23 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container-animacao {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 400px;
+    border: 2px solid black;
+}
+
+canvas {
+    background-image: url("gol.avif");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    cursor: none;
+}
